@@ -35,7 +35,7 @@ FROM ckan/ckan-dev:2.11
 # to get them mounted in this image at runtime
 
 # Copy custom initialization scripts
-COPY --chown=ckan-sys:ckan-sys docker-entrypoint.d/* /docker-entrypoint.d/
+# COPY --chown=ckan-sys:ckan-sys docker-entrypoint.d/* /docker-entrypoint.d/
 
 # Apply any patches needed to CKAN core or any of the built extensions (not the
 # runtime mounted ones)
