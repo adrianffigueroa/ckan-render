@@ -50,4 +50,4 @@ USER ckan
 #             done ; \
 #         fi ; \
 #     done
-CMD ["uwsgi", "--http", "0.0.0.0:5000", "--module", "ckan.config.middleware:make_app", "--ini", "/srv/app/uwsgi.ini"]
+CMD ["ckan-paster", "serve", "/etc/ckan/production.ini"]
