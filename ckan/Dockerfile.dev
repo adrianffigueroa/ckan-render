@@ -50,4 +50,4 @@ USER ckan
 #             done ; \
 #         fi ; \
 #     done
-CMD ["ckan-paster", "serve", "/etc/ckan/production.ini"]
+CMD ["supervisord", "--configuration", "/etc/ckan/supervisord.conf"]
